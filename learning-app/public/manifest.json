@@ -23,3 +23,14 @@
   "theme_color": "#000000",
   "background_color": "#ffffff"
 }
+[package]
+name = "GuessingGame"
+version = "0.1.0"
+edition = "2021"
+
+[[bin]]
+name = "GuessingGame"
+path = "src/GuessingGame.rs"
+
+
+[dependencies]
