@@ -3,10 +3,10 @@ import configs.database
 
 class UserModel(Model):
     class Meta:
-        datatable = configs.database.db
+        database = configs.database.db
         db_table = 'Users'
 
-    id = PrimaryKeyField()
+    email = TextField(unique=True, primary_key=True)
     name = CharField(max_length=20)
-    surname = CharField(max_length=20)
+    password = CharField(max_length=32)
     age = IntegerField()

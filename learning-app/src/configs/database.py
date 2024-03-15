@@ -1,4 +1,4 @@
-from peewee import MySQLDatabase
+from peewee import SqliteDatabase
 
 
-db = MySQLDatabase("LearningApp", user="root", password="mysql")
+db = SqliteDatabase('LearningApp.db')
