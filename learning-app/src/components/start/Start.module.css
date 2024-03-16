@@ -1,0 +1,89 @@
+.homepage{
+  height: 100vh;
+  width: 100vw;
+  padding-top: 50px;
+  & h1{
+    padding-top: 20px;
+    font-size: 4rem;
+		color: white;
+  }
+  & h2{
+		color: white;
+    font-size: 3rem;
+    padding-top: 60px;
+  }
+}
+
+body {
+  background: radial-gradient(ellipse at center, #0F4DEE, #391090 80%);
+}
+
+
+.header{
+  display: flex;
+  justify-content: space-between;
+  max-width: 90%;
+  margin: auto;
+  text-align: center;
+}
+
+.logo{
+	display: flex;
+	width: 200px;
+	height: 200px;
+	& h1 {
+		padding-top: 30px;
+	}
+}
+
+.middleText{
+  display: flex;
+  justify-content: space-between;
+  max-width: 70%;
+  margin: auto;
+  padding-top: 20px;
+}
+
+.mainImage{
+  margin-bottom: 50px;
+	width: 500px;
+	height: 350px;
+}
+
+
+.buttons{
+  display: flex;
+  justify-content: center;
+  gap: 100px;
+  padding-top: 50px;
+}
+
+.registrationButton{
+  font-size: 2rem;
+  color: black;
+  font-weight: 500;
+  border: solid 3px #FFC700;
+  border-radius: 1.5rem;
+  width: 25rem;
+  height: 7rem;
+  background-color: white;
+  box-shadow: 1px 6px 15px 6px rgba(0,0,0,0.4);
+}
+
+.loginButton{
+  color: black;
+  font-weight: 500;
+  font-size: 2rem;
+  border: solid 2px #000000;
+  border-radius: 1.5rem;
+  width: 25rem;
+  box-shadow: 1px 6px 15px 6px rgba(0,0,0,0.4);
+  height: 7rem;
+  background-color: #FFC700;
+}
+
+.twoText{
+	max-width: 50%;
+	font-weight: 400;
+	padding-top: 50px;
+}
