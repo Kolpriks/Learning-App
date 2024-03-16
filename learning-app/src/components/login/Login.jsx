@@ -18,14 +18,14 @@ function Login() {
 	const handleSubmit = async (e) => {
 		e.preventDefault();
 		try {
-			const response = await fetch('http://localhost:7878', { // измените URL
+			const response = await fetch('http://localhost:7878', { 
 				method: 'POST',
 				headers: {
 					'Content-Type': 'application/json',
 				},
 				body: JSON.stringify(formData),
 			});
-			// Вам может понадобиться обработать ответ от сервера
+			
 		} catch (error) {
 			console.error('Ошибка:', error);
 		}
@@ -40,7 +40,7 @@ function Login() {
 					name="email"
 					value={formData.field1}
 					onChange={handleChange}
-					placeholder='ivanivanov@email.da'
+					placeholder='youremail@email.com'
 				/>
 				<input
 					type="text"
