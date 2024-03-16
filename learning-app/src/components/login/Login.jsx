@@ -36,6 +36,7 @@ function Login() {
 		<div className={styles.login}>
 			<form onSubmit={handleSubmit} className={styles.formLogin}>
 				<input
+					className={styles.input}
 					type="text"
 					name="email"
 					value={formData.field1}
@@ -43,13 +44,14 @@ function Login() {
 					placeholder='youremail@email.com'
 				/>
 				<input
+					className={styles.input}
 					type="text"
 					name="password"
 					value={formData.field2}
 					onChange={handleChange}
 					placeholder='password'
 				/>
-				<button type="submit">Отправить</button>
+				<button className={styles.btn} type="submit">Отправить</button>
 			</form>	
 		</div>
     

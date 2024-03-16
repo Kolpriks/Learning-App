@@ -47,23 +47,23 @@ const Registration = () => {
     <div className={styles.registration}>
       <form onSubmit={handleSubmit} className={styles.formRegistration}>
         <div>
-          <input type="email" placeholder='youremail@email.com' value={email} onChange={(e) => setEmail(e.target.value)} required />
+          <input className={styles.input} type="email" placeholder='youremail@email.com' value={email} onChange={(e) => setEmail(e.target.value)} required />
         </div>
         <div>
 
-          <input type="text" placeholder='name' value={name} onChange={(e) => setName(e.target.value)} required />
+          <input className={styles.input} type="text" placeholder='name' value={name} onChange={(e) => setName(e.target.value)} required />
         </div>
         <div>
 
-          <input type="password" placeholder='password' value={password} onChange={(e) => setPassword(e.target.value)} required />
+          <input className={styles.input} type="password" placeholder='password' value={password} onChange={(e) => setPassword(e.target.value)} required />
         </div>
         <div>
 
-          <input type="password" placeholder='password' value={confirmPassword} onChange={(e) => setConfirmPassword(e.target.value)} required />
+          <input className={styles.input} type="password" placeholder='password' value={confirmPassword} onChange={(e) => setConfirmPassword(e.target.value)} required />
         </div>
         {error && <div style={{ color: 'red' }}>{error}</div>}
         {successMessage && <div style={{ color: 'green' }}>{successMessage}</div>}
-        <button type="submit">Register</button>
+        <button className={styles.btn} type="submit">Register</button>
       </form>
     </div>
   );

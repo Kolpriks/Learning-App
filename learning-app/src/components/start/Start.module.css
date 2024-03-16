@@ -2,9 +2,10 @@
   height: 100vh;
   width: 100vw;
   padding-top: 50px;
+	background: radial-gradient(ellipse at center, #0F4DEE, #391090 80%);
   & h1{
     padding-top: 20px;
-    font-size: 4rem;
+    font-size: 3rem;
 		color: white;
   }
   & h2{
@@ -14,9 +15,7 @@
   }
 }
 
-body {
-  background: radial-gradient(ellipse at center, #0F4DEE, #391090 80%);
-}
+
 
 
 .header{
@@ -29,8 +28,8 @@ body {
 
 .logo{
 	display: flex;
-	width: 200px;
-	height: 200px;
+	width: 150px;
+	height: 150px;
 	& h1 {
 		padding-top: 30px;
 	}
