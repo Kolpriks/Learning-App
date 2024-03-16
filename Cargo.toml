@@ -2,9 +2,11 @@
 name = "server"
 version = "0.1.0"
 edition = "2021"
-
+[lib]
+name = "server"
+path = "learning-app/src/server/src/lib.rs"
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 [[bin]]
 name = "server"
-path = "learning-app/src/server/src/main.rs"
+path = "learning-app/src/server/src/bin/main.rs"
 [dependencies]

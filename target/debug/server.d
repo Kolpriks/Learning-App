@@ -1,0 +1,1 @@
+C:\Users\Patos'ka\code\Learning-App\target\debug\server.exe: C:\Users\Patos'ka\code\Learning-App\learning-app\src\server\src\bin\main.rs C:\Users\Patos'ka\code\Learning-App\learning-app\src\server\src\lib.rs
