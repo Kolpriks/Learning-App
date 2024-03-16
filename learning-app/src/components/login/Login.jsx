@@ -15,35 +15,39 @@ function Login() {
     }));
   };
 
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-    try {
-      const response = await fetch('/backend-endpoint', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify(formData),
-      });
-    } catch (error) {
-      console.error('Ошибка:', error);
-    }
-  };
+	const handleSubmit = async (e) => {
+		e.preventDefault();
+		try {
+			const response = await fetch('http://localhost:7878', { // измените URL
+				method: 'POST',
+				headers: {
+					'Content-Type': 'application/json',
+				},
+				body: JSON.stringify(formData),
+			});
+			// Вам может понадобиться обработать ответ от сервера
+		} catch (error) {
+			console.error('Ошибка:', error);
+		}
+	};
+	
 
   return (
 		<div className={styles.login}>
-			<form onSubmit={handleSubmit}>
+			<form onSubmit={handleSubmit} className={styles.formLogin}>
 				<input
 					type="text"
 					name="email"
 					value={formData.field1}
 					onChange={handleChange}
+					placeholder='ivanivanov@email.da'
 				/>
 				<input
 					type="text"
 					name="password"
 					value={formData.field2}
 					onChange={handleChange}
+					placeholder='password'
 				/>
 				<button type="submit">Отправить</button>
 			</form>	

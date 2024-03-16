@@ -1,1 +1,1 @@
-C:\Users\Patos'ka\code\learning-app\learning-app\src\server\target\debug\server.exe: C:\Users\Patos'ka\code\learning-app\learning-app\src\server\src\main.rs
+C:\All\ for\ Kolpriks\Study\ Folder\Mobiles-Project\Learning-App\learning-app\src\server\target\debug\server.exe: C:\All\ for\ Kolpriks\Study\ Folder\Mobiles-Project\Learning-App\learning-app\src\server\src\main.rs
