@@ -1,41 +1,51 @@
-import React from 'react'
-import styles from './Home.module.css'
-import { Link } from 'react-router-dom';
+import React, { useState } from 'react';
+import styles from './Home.module.css';
+import { RxHamburgerMenu } from "react-icons/rx";
 const logo = '/generated-logo-no_backgroud.png';
-const personProf = '/person-prof.png';
-
 
 const Home = () => {
-	return (
-		<main className={styles.homepage}> 
-			<div className={styles.header}>
-				<div className={styles.logo}>
-					<img src={logo} alt="Logo"/>
-					<h1>ProfessionSkill<br/> Academy</h1>
-				</div>
-				<div>
-					<h2>Язык: Русский</h2>
+    // const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+		// const toggleMenu = () => {
+		// 		setIsMenuOpen(!isMenuOpen);
+		// };
+
+    return (
+			<div className={styles.home}>
+				<div className={styles.head}>
+					<div className={styles.logo}>
+						<img src={logo} alt='logo'/>
+						<h1>ProfessionSkill<br/> Academy</h1>
+					</div>
+					
 				</div>
 			</div>
+		);
+};
 
-			<div className={styles.middleText}>
-				<div className={styles.twoText}>
-					<h1>Добро пожаловать в <span style={{ color: '#FFC700', fontSize: '4rem', fontWeight: '500' }}>ProfessionSkill Academy</span></h1>
-					<h1>Здесь ты сможешь быстро познакомиться с основами интересующей тебя профессией!</h1>
-				</div>
-				<img src={personProf} alt="main picture of profession" className={styles.mainImage}/>
-			</div>
+export default Home;
 
-			<div className={styles.buttons}>
-				<Link to="/registration">
-					<button className={styles.registrationButton}>Зарегистрироваться</button>
-				</Link>
-				<Link to="/login">
-					<button className={styles.loginButton}>Войти</button>
-				</Link>
-			</div>
-		</main>
-	)
-}
 
-export default Home
+
+
+
+{/* <div className={styles.dropDownMenu}>
+<button className={styles.burgerMenu} onClick={toggleMenu}>
+	<RxHamburgerMenu />
+</button>
+{isMenuOpen && (
+	<div className={styles.menu}>
+		<ul>
+			<li>Frontend-Разработчик</li>
+			<li>Backend-Разработчик</li>
+			<li>Дизайнер</li>
+			<li>Монтажер</li>
+		</ul>
+	</div>
+)}
+</div>
+
+<div className={styles.logo}>
+<img src={logo} alt="Logo"/>
+<h1>ProfessionSkill<br/> Academy</h1>
+</div> */}
